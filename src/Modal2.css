@@ -1,0 +1,51 @@
+.modal {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0, .5);
+    display:flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.modal-body {
+    padding: 2rem;
+    width: 400px;
+    border-radius: 5px;
+    background: #fff;
+    height: 300px;
+}
+
+.modal-body__dot-hover {
+    width: 150px;
+    padding: 6px 6px 6px 20px;
+    background-color: rgb(150, 210, 221);
+    color: #fff;
+    border-radius: 4px;
+}
+
+.modal-body__title {
+    margin-block-start: 0;
+}
+
+.modal-body__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    position: relative;
+}
+
+.modal-body__img-sun {
+    width: 40px;
+    position: relative;
+    left: -20px;
+}
+
+.modal-body__img-moon {
+    width: 40px;
+    position: relative;
+    left: -10px
+}

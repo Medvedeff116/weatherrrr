@@ -1,0 +1,311 @@
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 10px;
+  color:#000000;
+}
+
+.header__line {
+  border: none; 
+  color: #000000; 
+  background-color: #000000; 
+  height: 2px;
+  margin-bottom: 30px; 
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.main-info {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 0 5px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  height: 14vh;  
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search_input {
+  width: 55%;
+  height: 40px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  font-size: 18px;
+  padding-left: 10px;
+  margin-right: 10px;
+  box-shadow: none;
+}
+
+.search_btn {
+  width: 10%;
+  min-width: 50px;
+  height: 46px;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  background-color:#000000;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.search_btn::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  color: #ffffff;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Cpath fill='%23fff' d='M9.996 17.991a7.996 7.996 0 117.995-7.995 1 1 0 01-2 0 5.996 5.996 0 10-1.756 4.24l.707-.708 7.115 7.115a1 1 0 01-1.414 1.414l-5.745-5.745a7.967 7.967 0 01-4.902 1.68z'/%3E%3C/svg%3E");
+}
+
+.search_btn:hover {
+  opacity: 0.8;
+}
+
+.search_location {
+  position: relative;
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid#000000;
+  background-color:#000000;
+  cursor: pointer;
+  margin-left: 10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.search_location:hover {
+  opacity: 0.8;
+}
+
+.search_location-img {
+  position: absolute;
+  top: 0;
+  left: 18%;
+  width: 80%;
+  transform: rotate(45deg);
+}
+
+.search-err-message {
+  position: relative;
+  align-self: flex-start;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #0e0000;
+  border-radius: 10px;
+  background-color:#000000;
+  color: #ffffff;
+}
+
+.search-err-message::before {
+  content: ''; 
+  position: absolute;
+  left: 5px; 
+  top: -20px;
+  border: 10px solid transparent; 
+  border-bottom: 10px solid #ffea00;
+}
+
+.cities-wrapper {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 20%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.cities-wrapper__label{
+  margin-left: 10px;
+}
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1px;
+}
+
+.city-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.city {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: left;
+  padding: 15px 20px;
+  border: none;
+}
+
+.city-wrapper:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.city__active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.city-status {
+  display: flex;
+  font-size: 32px;
+  margin: 0;
+}
+
+.delete-city {
+  cursor: pointer;
+  margin-right: 5px;
+  background-color: #d32f2f;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.weather-display {
+  width: 78%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.weather-display__loader {
+  font-size: 32px;
+}
+
+.weather-display__error {
+  border: 2px solid #d32f2f;
+  border-radius: 10px;
+  padding: 0 10px;
+  margin: auto;
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+.weather-display__error-city {
+  color: #000000;
+  font-weight: bold;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-info__item {
+  font-size: 18px;
+  /* color:#4b636e; */
+  margin: 5px 0;
+}
+
+.ring-2 {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  border: 4px solid #000000;
+  border-radius: 100%;
+}
+
+.ball-holder {
+  position: absolute;
+  width: 12px;
+  height: 45px;
+  left: 17px;
+  top: 0px;
+}
+
+.ball {
+  position: absolute;
+  top: -11px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background: #000000;
+}
+
+.load-5 .ball-holder {animation: loader 0.5s linear infinite;}
+
+@keyframes loader {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+@media (max-width: 800px) {
+  .search-wrapper {
+    width: 90%
+  }
+  .main-info {
+    flex-direction: column;
+  }
+  .cities-wrapper {
+    width: 100%
+  }
+  .weather-display {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .city-status {
+    align-items: center;
+    font-size: 22px;
+  }
+  
+}
+.cont{
+  display:block;
+  width: 300px;
+  height: 300px;
+  border-radius:50%;
+  border-top:3px solid  #000;
+}
+
+.circle {
+	width: 12px;
+	height: 12px;
+	background: rgb(0, 0, 0);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+.circle2 {
+	width: 12px;
+	height: 12px;
+	background: rgb(0, 0, 0);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  margin-left: 230px;
+}
